@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Course Registration</title>
+</head>
+<body>
+  <h1>Online Course Registration</h1>
+  <p>Fill in the form below to register for an online course.</p>
+
+  <form action="#" method="post" target="_self" enctype="multipart/form-data">
+    <input type="hidden" name="formName" value="Online Course Registration">
+
+    <p>
+      <label for="studentName">Student Name:</label><br>
+      <input type="text" id="studentName" name="studentName"
+             placeholder="Enter your full name" required>
+    </p>
+
+    <p>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email"
+             placeholder="Enter your email" required>
+    </p>
+
+    <p>
+      <label for="mobile">Mobile Number:</label><br>
+      <input type="tel" id="mobile" name="mobile"
+             placeholder="Enter your mobile number" required>
+    </p>
+
+    <p>
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" min="1" max="120"
+             placeholder="Enter your age">
+    </p>
+
+    <p>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"
+             placeholder="Create a password" required>
+    </p>
+
+    <p>
+      Gender:<br>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label><br>
+
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br>
+
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+    </p>
+
+    <p>
+      Skills:<br>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label><br>
+
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label><br>
+
+      <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+      <label for="javascript">JavaScript</label><br>
+
+      <input type="checkbox" id="python" name="skills" value="Python">
+      <label for="python">Python</label>
+    </p>
+
+    <p>
+      <label for="course">Select a Course:</label><br>
+      <select id="course" name="course" required>
+        <option value="">Choose a course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Python Programming">Python Programming</option>
+        <option value="Data Analytics">Data Analytics</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob">
+    </p>
+
+    <p>
+      <label for="classTime">Preferred Class Time:</label><br>
+      <input type="time" id="classTime" name="classTime">
+    </p>
+
+    <p>
+      <label for="details">Address / Additional Information:</label><br>
+      <textarea id="details" name="details" rows="5" cols="40"
+                placeholder="Enter your address or additional information"></textarea>
+    </p>
+
+    <p>
+      <label for="document">Upload a Document or Photograph:</label><br>
+      <input type="file" id="document" name="document">
+    </p>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
